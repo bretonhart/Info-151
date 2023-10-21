@@ -6,16 +6,66 @@ footer{
 
 #footer-top{
 
-        background-color: var(--black);
+        
 
         padding: 80px 0;
+
+        section{
+            img{
+                padding: 20px 0px;
+            }
+        }
+        p{
+            color: var(--gray);
+        }
+        section{
+            h2{
+                margin-bottom: 20px;
+            }
+        }
+        
+        ul{
+            li{
+                color: var(--gray);
+                padding: 15px;
+            }
+        }
 }
 #footer-bottom{
-    background-color: black;
+    padding: 20px 0px;
+
+    p{
+        color: var(--gray);
+    }
+
 }
 
 #form-field{
-    
+    h2{
+        color: var(--white);
+    }
+    p{
+        padding: 10px 0px;
+        color: var(--gray);
+    }
+    form{
+        padding: 9px;
+        background-color: var(--black);
+        border-radius: 1px;
+        border-color: var(--gray);
+        border: solid var(--gray);
+        display: inline-block;
+
+        input{
+            border: 3px;
+            border-color: var(--gray);
+            background-color: var(--black);
+
+        }
+
+    }
+
+
 }
 
 }
