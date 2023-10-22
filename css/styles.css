@@ -17,6 +17,7 @@ html {
   --blue: #060640;
   --green: #00E5CC;
   --gray: #9090A7;
+  --purple: #5319A6;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -372,6 +373,13 @@ button {
   border-radius: 6px;
 }
 
+.light-blue-btn {
+  background-color: var(--light-blue);
+  color: var(--white);
+  padding: 20px 28px;
+  border-radius: 6px;
+}
+
 /* =============
     Forms
 ============= */
@@ -404,3 +412,69 @@ textarea {
 /* =============
     Plans
 ============= */
+#Topper h1 {
+  padding: 25px 0;
+}
+
+#Start-up {
+  border: solid;
+  border-color: var(--gray);
+  display: inline-block;
+}
+#Start-up h3 {
+  padding: 7px 0;
+  margin-left: 40px;
+}
+#Start-up h1 {
+  padding: 7px 0;
+  margin-left: 40px;
+}
+#Start-up p {
+  padding: 7px 0;
+  margin-left: 40px;
+}
+#Start-up button {
+  margin: 15px;
+}
+
+#Mid {
+  border: solid;
+  border-color: var(--purple);
+  display: inline-block;
+}
+#Mid aside h3 {
+  background-color: var(--purple);
+  padding: 7px 0;
+}
+#Mid aside h1 {
+  background-color: var(--purple);
+  padding: 7px 0;
+}
+#Mid aside p {
+  padding: 7px 0;
+  margin-left: 40px;
+}
+#Mid aside button {
+  margin: 20px;
+}
+
+#Premium {
+  border: solid;
+  border-color: var(--gray);
+  display: inline-block;
+}
+#Premium h3 {
+  padding: 5px 0;
+  margin-left: 40px;
+}
+#Premium h1 {
+  padding: 5px 0;
+  margin-left: 40px;
+}
+#Premium p {
+  padding: 5px 0;
+  margin-left: 40px;
+}
+#Premium button {
+  margin: 15px;
+}

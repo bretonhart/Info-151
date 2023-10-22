@@ -1,3 +1,72 @@
 /* =============
     Plans
 ============= */
+#Topper{
+    h1{
+        padding: 25px 0;
+    }
+}
+
+#Start-up{
+    border: solid;
+    border-color: var(--gray);
+    display: inline-block;
+        h3{
+            padding: 7px 0;
+            margin-left: 40px;
+        }
+        h1{
+            padding: 7px 0;
+            margin-left: 40px;
+        }
+        p{
+            padding: 7px 0;
+            margin-left: 40px;
+        }
+        button{
+            margin: 15px;
+        }
+}
+
+#Mid{
+    border: solid;
+    border-color: var(--purple);
+    display: inline-block;
+    aside{
+        h3{
+            background-color: var(--purple);
+            padding: 7px 0;
+        }
+        h1{
+            background-color: var(--purple);
+            padding: 7px 0;
+        }
+        p{
+            padding: 7px 0;
+            margin-left: 40px;
+        }
+        button{
+            margin: 20px;
+        }
+    }
+}
+#Premium{
+    border: solid;
+    border-color: var(--gray);
+    display: inline-block;
+    h3{
+        padding: 5px 0;
+        margin-left: 40px;
+    }
+    h1{
+        padding: 5px 0;
+        margin-left: 40px;
+    }
+    p{
+        padding: 5px 0;
+        margin-left: 40px;
+    }
+    button{
+        margin: 15px;
+    }
+}
