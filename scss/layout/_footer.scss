@@ -3,13 +3,8 @@
 ============= */
 footer{
     color:var(--white);
-
 #footer-top{
-
-        
-
         padding: 80px 0;
-
         section{
             img{
                 padding: 20px 0px;
@@ -22,8 +17,7 @@ footer{
             h2{
                 margin-bottom: 20px;
             }
-        }
-        
+        }      
         ul{
             li{
                 color: var(--gray);
@@ -33,11 +27,9 @@ footer{
 }
 #footer-bottom{
     padding: 20px 0px;
-
     p{
         color: var(--gray);
     }
-
 }
 
 #form-field{
@@ -55,17 +47,11 @@ footer{
         border-color: var(--gray);
         border: solid var(--gray);
         display: inline-block;
-
         input{
             border: 3px;
             border-color: var(--gray);
             background-color: var(--black);
-
         }
-
     }
-
-
 }
-
 }
