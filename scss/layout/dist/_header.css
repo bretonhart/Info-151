@@ -1,0 +1,11 @@
+/* =============
+    Header
+============= */
+header {
+  padding: 25px 0;
+  display: inline-block;
+}
+
+nav ul li {
+  display: inline-block;
+}
