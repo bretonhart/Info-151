@@ -428,6 +428,7 @@ footer #footer-top section h2 {
 footer #footer-top ul li {
   color: var(--gray);
   padding: 15px;
+  display: inline;
 }
 footer #footer-bottom {
   padding: 20px 0px;
