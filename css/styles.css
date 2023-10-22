@@ -358,6 +358,17 @@ ul {
 /* =============
     Buttons
 ============= */
+button {
+  border: 0;
+}
+
+.blue-btn {
+  background-color: var(--lightblue);
+  color: var(--white);
+  padding: 20px 28px;
+  border-radius: 6px;
+}
+
 /* =============
     Forms
 ============= */
@@ -391,6 +402,7 @@ header {
 
 nav ul li {
   display: inline-block;
+  padding: 10px 0;
 }
 
 /* =============
@@ -400,6 +412,7 @@ nav ul li {
     Hero
 ============= */
 #hero h1 {
+  margin: 12px;
   color: var(--white);
 }
 #hero p {

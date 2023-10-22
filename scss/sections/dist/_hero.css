@@ -2,6 +2,7 @@
     Hero
 ============= */
 #hero h1 {
+  margin: 12px;
   color: var(--white);
 }
 #hero p {
