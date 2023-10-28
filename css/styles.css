@@ -408,42 +408,6 @@ textarea {
 /* =============
     Navigation
 ============= */
-a {
-  text-decoration: none;
-}
-
-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-right: 175px;
-  margin-top: 0px;
-}
-nav ul li {
-  color: var(--gray);
-  list-style: none;
-  padding: 30px;
-}
-nav ul li a:link, nav ul li a:visited {
-  font-size: 1.25rem;
-  font-weight: 400;
-  color: var(--gray);
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-}
-nav ul li a:hover, nav ul li a:active {
-  color: var(--light-blue);
-}
-nav ul li a.blue-btn {
-  color: var(--white);
-}
-nav ul li a.select {
-  color: var(--light-blue);
-}
-
 /* =============
     Header
 ============= */
@@ -452,47 +416,79 @@ nav ul li a.select {
 ============= */
 footer {
   color: var(--white);
+  list-style: none;
 }
 footer #footer-top {
-  padding: 80px 0;
+  background-color: var(--black);
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-left: 20px;
 }
-footer #footer-top section img {
-  padding: 20px 0px;
+footer #footer-top img {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 footer #footer-top p {
-  color: var(--gray);
+  display: inline-block;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-right: 70px;
 }
-footer #footer-top section h2 {
-  margin-bottom: 20px;
+footer #footer-top ul {
+  list-style: none;
+  margin: 20px;
 }
 footer #footer-top ul li {
-  color: var(--gray);
   padding: 15px;
-  display: inline;
 }
 footer #footer-bottom {
-  padding: 20px 0px;
+  background-color: var(--black);
+  padding: 27px 0px;
 }
 footer #footer-bottom p {
   color: var(--gray);
 }
+footer #form-field {
+  background-color: var(--black);
+  display: inline-block;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
 footer #form-field h2 {
   color: var(--white);
+  padding: 15px 0px;
 }
 footer #form-field p {
-  padding: 10px 0px;
   color: var(--gray);
+  padding: 10px 0;
+  margin-bottom: 10px;
 }
 footer #form-field form {
   padding: 9px;
   background-color: var(--black);
   border-radius: 1px;
   border-color: var(--gray);
-  border: solid var(--gray);
+  border: solid var(--gray) 2px;
+  border-left: 30px;
   display: inline-block;
 }
 footer #form-field form input {
-  border: 3px;
+  border: 10px;
   border-color: var(--gray);
   background-color: var(--black);
+  display: inline-block;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
