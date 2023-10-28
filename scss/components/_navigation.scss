@@ -1,3 +1,36 @@
 /* =============
     Navigation
 ============= */
+a{
+    text-decoration: none;
+}
+nav{  
+    ul{
+        display:flex;
+        justify-content: flex-end;
+        margin-right: 175px;
+        margin-top: 0px;    
+        li{
+            color: var(--gray);
+            list-style: none;
+            padding: 30px;         
+            a:link, a:visited{
+                font-size: rem-calc(20);
+                font-weight: 400;
+                color: var(--gray);
+                transition: 0.25s;
+            }
+            a:hover, a:active{
+                color: var(--lightblue);
+            }
+            a.blue-btn{
+                color: var(--white);
+            }
+            a.Select{
+                color: var(--lightblue);
+            }
+        }
+       
+    }
+}
+ 
