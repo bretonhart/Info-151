@@ -347,6 +347,10 @@ body {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Inter", sans-serif;
+}
+
 h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
@@ -404,6 +408,42 @@ textarea {
 /* =============
     Navigation
 ============= */
+a {
+  text-decoration: none;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 175px;
+  margin-top: 0px;
+}
+nav ul li {
+  color: var(--gray);
+  list-style: none;
+  padding: 30px;
+}
+nav ul li a:link, nav ul li a:visited {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--gray);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+nav ul li a:hover, nav ul li a:active {
+  color: var(--light-blue);
+}
+nav ul li a.blue-btn {
+  color: var(--white);
+}
+nav ul li a.select {
+  color: var(--light-blue);
+}
+
 /* =============
     Header
 ============= */
