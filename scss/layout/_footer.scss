@@ -35,12 +35,14 @@ footer{
     #footer-bottom{
         background-color: var(--black);
         padding: 27px 0px;
-       
-       
-        p{
-            color: var(--gray);
-        }
+        text-align: center;
+        color: var(--gray);        
     }
+                
+
+
+       
+
     #form-field{
         background-color: var(--black);
         display: inline-block;

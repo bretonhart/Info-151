@@ -454,8 +454,7 @@ footer #footer-top ul li {
 footer #footer-bottom {
   background-color: var(--black);
   padding: 27px 0px;
-}
-footer #footer-bottom p {
+  text-align: center;
   color: var(--gray);
 }
 footer #form-field {
