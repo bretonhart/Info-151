@@ -3,34 +3,47 @@
 ============= */
 a{
     text-decoration: none;
+   
+   
 }
-nav{  
+ 
+ 
+nav{
+
+   
+   
     ul{
         display:flex;
         justify-content: flex-end;
-        margin-right: 175px;
-        margin-top: 0px;    
+        list-style: none;
+        align-items: center;
+       
         li{
             color: var(--gray);
             list-style: none;
-            padding: 30px;         
+            padding: 25px;
+            margin-right: 8px;
+            font-weight: 400;
             a:link, a:visited{
-                font-size: rem-calc(20);
-                font-weight: 400;
+                font-size: rem-calc(15);
                 color: var(--gray);
                 transition: 0.25s;
+                display: flex;
             }
             a:hover, a:active{
-                color: var(--lightblue);
+                color: var(--light-blue);
+ 
             }
             a.blue-btn{
                 color: var(--white);
             }
-            a.Select{
-                color: var(--lightblue);
+            a.select{
+                color: var(--light-blue);
             }
         }
+     
        
     }
 }
+ 
  

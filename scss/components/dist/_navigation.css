@@ -8,26 +8,28 @@ a {
 nav ul {
   display: flex;
   justify-content: flex-end;
-  margin-right: 175px;
-  margin-top: 0px;
+  list-style: none;
+  align-items: center;
 }
 nav ul li {
   color: var(--gray);
   list-style: none;
-  padding: 30px;
+  padding: 25px;
+  margin-right: 8px;
+  font-weight: 400;
 }
 nav ul li a:link, nav ul li a:visited {
-  font-size: rem-calc(20);
-  font-weight: 400;
+  font-size: rem-calc(15);
   color: var(--gray);
   transition: 0.25s;
+  display: flex;
 }
 nav ul li a:hover, nav ul li a:active {
-  color: var(--lightblue);
+  color: var(--light-blue);
 }
 nav ul li a.blue-btn {
   color: var(--white);
 }
-nav ul li a.Select {
-  color: var(--lightblue);
+nav ul li a.select {
+  color: var(--light-blue);
 }

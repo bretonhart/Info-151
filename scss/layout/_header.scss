@@ -1,3 +1,14 @@
 /* =============
     Header
 ============= */
+header{
+    display: grid;
+    grid-template-columns: 20% auto;
+    margin-top: 50px;
+   
+ 
+    #logo-container{
+        display: flex;
+        align-items: center;
+    }
+}  

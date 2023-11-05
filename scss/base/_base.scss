@@ -2,6 +2,23 @@
     Base
 ============= */
 body{
+ 
     background-color: var(--purple);
+    main{
+        display: grid;
+        grid-template-columns: auto 1170px auto;
+        grid-template-areas:". main-content ." ;
+ 
+        #main-grid-item{
+            grid-area: main-content;
+           
+ 
+        }
+    }
 }
-
+ 
+#html-tag{
+    display: flex;
+    justify-content: center;
+   
+}

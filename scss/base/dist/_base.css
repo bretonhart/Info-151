@@ -4,3 +4,16 @@
 body {
   background-color: var(--purple);
 }
+body main {
+  display: grid;
+  grid-template-columns: auto 1170px auto;
+  grid-template-areas: ". main-content .";
+}
+body main #main-grid-item {
+  grid-area: main-content;
+}
+
+#html-tag {
+  display: flex;
+  justify-content: center;
+}
