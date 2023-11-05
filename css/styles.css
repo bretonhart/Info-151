@@ -340,8 +340,22 @@ body {
   background-color: var(--black);
 }
 
-#html-verification {
+#htlm-tag {
   margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
 }
 
 /* =============
@@ -385,6 +399,10 @@ button {
   border-radius: 6px;
 }
 
+.blue-btn:hover {
+  color: var(--blue);
+}
+
 /* =============
     Forms
 ============= */
@@ -416,78 +434,136 @@ textarea {
 ============= */
 footer {
   color: var(--white);
-  list-style: none;
 }
 footer #footer-top {
   background-color: var(--black);
-  padding: 50px 0;
+  padding: 70px 40px;
+  margin-left: 20%;
+  text-decoration: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1170px auto;
+  grid-template-columns: auto 1170px auto;
+      grid-template-areas: ". ftgi .";
+}
+footer #footer-top #footer-top-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: ftgi;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 24% 25% auto;
+  grid-template-columns: 10% 24% 25% auto;
+  padding: 20px;
+}
+footer #footer-top #footer-top-grid-item section img {
+  margin-bottom: 30px;
+  margin-left: -200px;
+}
+footer #footer-top #footer-top-grid-item section #para {
+  margin-left: -200px;
+  margin-right: 30px;
+  color: var(--gray);
+}
+footer #footer-top #footer-top-grid-item section a {
+  text-decoration: none;
+}
+footer #footer-top #footer-top-grid-item section ul {
+  margin-bottom: 10%;
+}
+footer #footer-top #footer-top-grid-item section ul li {
+  padding: 10px;
+}
+footer #footer-top #footer-top-grid-item section ul li a:link, footer #footer-top #footer-top-grid-item section ul li a:visited {
+  font-size: 1.25rem;
+  color: var(--gray);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+footer #footer-top #footer-top-grid-item section ul li a:hover, footer #footer-top #footer-top-grid-item section ul li a:active {
+  color: var(--light-blue);
+}
+footer #footer-top #footer-top-grid-item #socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  margin-left: 20px;
 }
-footer #footer-top img {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+footer #footer-top #footer-top-grid-item #socials li {
+  margin-left: -60px;
+  margin-right: -20px;
+  margin-top: 20px;
+  padding: 1px;
 }
-footer #footer-top p {
-  display: inline-block;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin-right: 70px;
+footer #footer-top #footer-top-grid-item #socials li a:link, footer #footer-top #footer-top-grid-item #socials li a:visited {
+  height: 30px;
+  width: 30px;
+  border: 1px solid var(--gray);
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
-footer #footer-top ul {
-  list-style: none;
-  margin: 20px;
-}
-footer #footer-top ul li {
-  padding: 15px;
+footer #footer-top #footer-top-grid-item #socials li a:hover, footer #footer-top #footer-top-grid-item #socials li a:active {
+  background-color: var(--light-blue);
+  color: var(--white);
+  border: 1px solid var(--light-blue);
 }
 footer #footer-bottom {
   background-color: var(--black);
-  padding: 27px 0px;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+footer #footer-bottom p {
   color: var(--gray);
 }
 footer #form-field {
   background-color: var(--black);
-  display: inline-block;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  padding: 0px 10px;
 }
 footer #form-field h2 {
   color: var(--white);
-  padding: 15px 0px;
+  margin-bottom: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 footer #form-field p {
   color: var(--gray);
-  padding: 10px 0;
-  margin-bottom: 10px;
+  padding: 15px 200px 15px 0;
+  margin-bottom: 10%;
 }
 footer #form-field form {
-  padding: 9px;
+  padding: 1px;
   background-color: var(--black);
-  border-radius: 1px;
+  border-radius: 5%;
   border-color: var(--gray);
   border: solid var(--gray) 2px;
-  border-left: 30px;
   display: inline-block;
 }
 footer #form-field form input {
-  border: 10px;
+  border: 8px;
   border-color: var(--gray);
   background-color: var(--black);
   display: inline-block;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+}
+footer #resources h2 {
+  margin-bottom: 10%;
+}
+footer #useful-links h2 {
+  margin-bottom: 10%;
 }

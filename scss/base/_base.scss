@@ -2,9 +2,20 @@
     Base
 ============= */
 body{
-    background-color: var(--black)
+    background-color: var(--black);
 }
-#html-verification{
+ 
+#htlm-tag{
     margin-top: 60px;
+    display: flex;
+    justify-content: center;
 }
-
+ 
+ul{
+    padding: 0;
+    margin: 0;
+ 
+    li{
+        list-style: none;
+    } 
+}
