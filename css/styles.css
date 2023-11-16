@@ -372,7 +372,6 @@ header {
   padding: 12pc 24px;
   display: -ms-grid;
   display: grid;
-  display: inline;
   -ms-grid-columns: 90% 10%;
   grid-template-columns: 90% 10%;
 }
