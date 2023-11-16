@@ -2,7 +2,64 @@
     Header
 ============= */
 header{
-    padding: 12pc 24px;
+    padding: 22.5px 36px;
     display: grid;
-    grid-template-columns: 90% 10%;
+    grid-template-columns: 25% 25% auto;
+    grid-template-areas: "logo . burger"
+    "nav nav nav";
+ 
+    @include xl{
+        display: grid;
+        grid-template-columns: 30% auto 5%;
+        grid-template-areas: "logo . nav . buttons ";
+        //justify-content: center;
+        border: 1px solid red;
+    }
+ 
+ 
+ 
+    #logo-container{
+        //border: 1px solid blue;
+        display: flex;
+        align-items: center;
+        grid-area: logo;
+ 
+    }
+ 
+    #hamburger-container{
+        //border: 1px solid red;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        grid-area: burger;
+        background-color: transparent;
+        border: none;
+       
+ 
+        @include xl{
+            display: none;
+        }
+ 
+    }
+ 
+    nav{
+        //see navigation partial for scss
+        //border: 1px solid black;
+        grid-area: nav;
+        display: flex;
+        justify-content: flex-end;
+        font-weight: 400;
+ 
+        @include xl{
+           //margin-right: 350px;
+        }
+ 
+ 
+       
+    }
+ 
+    .buttons{
+        grid-area: buttons;
+    }  
 }
+ 

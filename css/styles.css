@@ -342,6 +342,44 @@ template {
 /* =============
     Buttons
 ============= */
+button {
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+}
+
+#sign-in {
+  border: 1px solid var(--black);
+  padding: 20px 30px;
+  border-radius: 8px;
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+#sign-up {
+  border: 1px solid var(--black);
+  padding: 20px 24px;
+  border-radius: 8px;
+  color: var(--dark-blue);
+  font-size: 16px;
+}
+
+#sign-in:hover {
+  color: var(--black);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+#sign-up:hover {
+  color: var(--black);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+#burger {
+  border: none;
+  background-color: transparent;
+}
+
 /* =============
     Forms
 ============= */
@@ -365,15 +403,173 @@ textarea {
 /* =============
     Navigation
 ============= */
+.showmainNav {
+  display: block !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+#mainNav {
+  display: none;
+}
+#mainNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media (min-width: 1200px) {
+  #mainNav ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+#mainNav ul li {
+  border-bottom: 1px solid var(--gray);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+@media (min-width: 1200px) {
+  #mainNav ul li {
+    border: none;
+  }
+}
+#mainNav ul li a:link, #mainNav ul li a:visited {
+  padding: 40px 31px;
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--gray);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+#mainNav ul li a:hover, #mainNav ul li a:active {
+  color: var(--black);
+}
+#mainNav .buttons {
+  display: inline-block;
+  margin-left: 40%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 5%;
+}
+@media (min-width: 1200px) {
+  #mainNav .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 /* =============
     Header
 ============= */
 header {
-  padding: 12pc 24px;
+  padding: 22.5px 36px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 90% 10%;
-  grid-template-columns: 90% 10%;
+  -ms-grid-columns: 25% 25% auto;
+  grid-template-columns: 25% 25% auto;
+      grid-template-areas: "logo . burger" "nav nav nav";
+}
+@media (min-width: 1200px) {
+  header {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 30% auto 5%;
+    grid-template-columns: 30% auto 5%;
+        grid-template-areas: "logo . nav . buttons ";
+    border: 1px solid red;
+  }
+}
+header #logo-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-area: logo;
+}
+header #hamburger-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-area: burger;
+  background-color: transparent;
+  border: none;
+}
+@media (min-width: 1200px) {
+  header #hamburger-container {
+    display: none;
+  }
+}
+header nav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: nav;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-weight: 400;
+}
+header .buttons {
+  grid-area: buttons;
+}
+@media (min-width: 1200px) {
+  header #logo-container {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  header nav {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+  }
+  header .buttons {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+  }
 }
 
 /* =============
