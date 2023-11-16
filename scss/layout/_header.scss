@@ -12,22 +12,19 @@ header{
         display: grid;
         grid-template-columns: 30% auto 5%;
         grid-template-areas: "logo . nav . buttons ";
-        //justify-content: center;
         border: 1px solid red;
     }
  
  
  
     #logo-container{
-        //border: 1px solid blue;
         display: flex;
         align-items: center;
-        grid-area: logo;
+        grid-area:logo;
  
     }
  
     #hamburger-container{
-        //border: 1px solid red;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -43,15 +40,12 @@ header{
     }
  
     nav{
-        //see navigation partial for scss
-        //border: 1px solid black;
         grid-area: nav;
         display: flex;
         justify-content: flex-end;
         font-weight: 400;
  
         @include xl{
-           //margin-right: 350px;
         }
  
  
