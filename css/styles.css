@@ -14,6 +14,7 @@ html {
   --black: #000000;
   --white: #ffffff;
   --darkblue: #024A58;
+  --lightgreen:#027e97;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -583,4 +584,29 @@ header .buttons {
   background-position: center;
   background-size: cover;
   height: 100vh;
+}
+
+/* =============
+    signin
+============= */
+#sign-in {
+  background-color: var(--darkblue);
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 16px;
+}
+#sign-in form input {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 60px;
+  margin-bottom: 24px;
 }

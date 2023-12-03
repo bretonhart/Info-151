@@ -1,0 +1,28 @@
+/* =============
+    sign-in
+============= */
+#sign-in{
+    background-color: var(--darkblue);
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+
+
+    form{
+        input{
+            width: 100%;
+            box-sizing: border-box;
+            height: 60px;
+            margin-bottom: 24px;
+        }
+
+        button{
+            background-color: var(--lightgreen);
+            color: var(white);
+
+
+        }
+    }
+}
