@@ -7,19 +7,30 @@
     <!---Font Awesome--->
         <script src="https://kit.fontawesome.com/6f4cc86b2c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
-    <title>Week 7 Desktop</title>
+    <title>Week 8</title>
 </head>
 
 <body>
-        <section id="sign-in">
-            <form action="#">
-                <input type="text" placeholder="User Name">
-                <input type="text" placeholder="Password">
-                <button class="sign-up">Sign In</button>
-            </form>
-
-        </section>
-
+    <section id="signin-container">
+        <form action="#">
+            <div id="close-btn-container">
+                <button class="close-btn" id="close-sign-up-modal-btn">
+                    <i class="fa-solid fa-xmark"></i>
+            </div>
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="text" placeholder="Address">
+            <input type="text" placeholder="State">
+            <input type="text" placeholder="Zip Code">
+            <input type="text" placeholder="Phone Number">
+            <input type="text" placeholder="Email">
+            <div id="signin-btn-container">
+            <button class="lgt-blue" id="sign-in-btn">Send</button>
+            <button class="lgt-blue" id="sign-in-btn">Cancel</button>
+            </div>
+        </form>
+   
+</section>
     <header>
         <section id="logo-container">
             <img src="img/logo.svg" alt="waterdrop-logo">
