@@ -5,12 +5,21 @@
     display: block !important;
 }
  
+.showSignIn{
+    display: flex !important;
+    justify-content: flex-end;
+}
+ 
 a{
     text-decoration: none;
 }
  
 #mainNav{
     display: none;
+ 
+    @include xl{
+        display: block;
+    }
     ul{
         display: flex;
         justify-content: flex-end;
@@ -19,8 +28,8 @@ a{
  
         @include xl{
             flex-direction: row;
-            justify-content: flex-end;
-            align-items: center;
+            //justify-content: flex-end;
+            //align-items: center;
             //margin-top: -100px;
         }
         li{
@@ -31,7 +40,7 @@ a{
             @include xl{
                 border: none;
             }
-
+ 
             a:link, a:visited{
                 padding: 40px 31px;
                 //border: 1px solid red;
@@ -39,31 +48,13 @@ a{
                 margin-bottom: 12px;
                 color: var(--gray);
                 transition: 0.25s;
-            } 
+ 
+            }
+ 
             a:hover, a:active{
                 color: var(--black);
  
-            }  
-        }      
-    }
- 
-    .buttons{
-        display: inline-block;
-        margin-left: 40%;
-        justify-content: space-between;
-        margin-top: 5%;
-        // grid-area: buttons;
-        // grid-template-columns: 45% 45%;
-        // justify-content: space-between;
-        // margin-top: 20px;
- 
-        @include xl{
-            display: flex;
-            justify-content: flex-end;
-            justify-content: space-between;
+            }      
         }
-     }
- 
- 
+    }
 }
- 

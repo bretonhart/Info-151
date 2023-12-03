@@ -13,8 +13,10 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
-  --darkblue: #024A58;
-  --lightgreen:#027e97;
+  --gray: #74768F;
+  --dark-blue: #024A58;
+  --light-blue: #027e97;
+  --lighter-blue: #b4f2ff;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -333,7 +335,29 @@ template {
 /* =============
     Base
 ============= */
-#validation-button {
+.show-signIn-container {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.hide-burger-x {
+  display: none !important;
+}
+
+.hide-burger-bars {
+  display: none !important;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+
+#html-valid {
   text-align: center;
   margin-top: 100px;
 }
@@ -349,29 +373,32 @@ button {
   font-family: "Inter", sans-serif;
 }
 
-#sign-in {
+#sign-in-btn {
+  grid-area: signin;
   border: 1px solid var(--black);
   padding: 20px 30px;
   border-radius: 8px;
-  background-color: var(--darkblue);
+  background-color: var(--dark-blue);
   color: var(--white);
+  margin-right: 15px;
 }
 
-#sign-up {
+#sign-up-btn {
+  grid-area: signup;
   border: 1px solid var(--black);
   padding: 20px 24px;
   border-radius: 8px;
-  color: var(--darkblue);
+  color: var(--dark-blue);
   font-size: 16px;
 }
 
-#sign-in:hover {
+#sign-in-btn:hover {
   color: var(--black);
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
 
-#sign-up:hover {
+#sign-up-btn:hover {
   color: var(--black);
   -webkit-transition: 0.25s;
   transition: 0.25s;
@@ -380,6 +407,38 @@ button {
 #burger {
   border: none;
   background-color: transparent;
+}
+
+.lgt-blue {
+  border: 1px solid var(--white);
+  padding: 20px 30px;
+  border-radius: 8px;
+  background-color: var(--light-blue);
+  color: var(--white);
+  margin-right: 15px;
+}
+
+.lgt-blue:hover {
+  color: var(--black);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.close-btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--lighter-blue);
+  border: 1px solid var(--black);
 }
 
 /* =============
@@ -409,12 +468,26 @@ textarea {
   display: block !important;
 }
 
+.showSignIn {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 a {
   text-decoration: none;
 }
 
 #mainNav {
   display: none;
+}
+@media (min-width: 1200px) {
+  #mainNav {
+    display: block;
+  }
 }
 #mainNav ul {
   display: -webkit-box;
@@ -434,12 +507,6 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 #mainNav ul li {
@@ -466,27 +533,6 @@ a {
 }
 #mainNav ul li a:hover, #mainNav ul li a:active {
   color: var(--black);
-}
-#mainNav .buttons {
-  display: inline-block;
-  margin-left: 40%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 5%;
-}
-@media (min-width: 1200px) {
-  #mainNav .buttons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
 }
 
 /* =============

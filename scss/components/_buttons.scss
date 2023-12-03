@@ -3,40 +3,77 @@
 ============= */
 button{
     cursor: pointer;
+    //justify-content: flex-end;
+    //margin-left: 100px;
     font-family: 'Inter', sans-serif;
 }
-#sign-in{
+#sign-in-btn{
+    grid-area: signin;
     border: 1px solid var(--black);
     padding: 20px 30px;
     border-radius: 8px;
-    background-color: var(--darkblue);
+    background-color: var(--dark-blue);
     color: var(--white);
+    margin-right: 15px;
+    //justify-content: space-between;
 }
  
-#sign-up{
+#sign-up-btn{
+    grid-area: signup;
     border: 1px solid var(--black);
     padding: 20px 24px;
     border-radius: 8px;
-    color: var(--darkblue);  
+    color: var(--dark-blue);  
+    //justify-content: space-between;
     font-size: 16px;
-
+    //margin-right: -50px;
 }
  
-#sign-in:hover{
+#sign-in-btn:hover{
     color: var(--black);
     transition: 0.25s;
  
 }
  
  
-#sign-up:hover{
+#sign-up-btn:hover{
     color: var(--black);
     transition: 0.25s;
 }
-
  
 #burger{
     border: none;
     background-color: transparent;
 }
  
+.lgt-blue{
+    border: 1px solid var(--white);
+    padding: 20px 30px;
+    border-radius: 8px;
+    background-color: var(--light-blue);
+    color: var(--white);
+    margin-right: 15px;
+    //justify-content: space-between;
+ 
+ 
+   
+}
+ 
+.lgt-blue:hover{
+    color: var(--black);
+    transition: 0.25s;
+ 
+}
+ 
+ 
+.close-btn{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lighter-blue);
+    border: 1px solid var(--black);
+ 
+}
