@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!---Font Awesome--->
         <script src="https://kit.fontawesome.com/6f4cc86b2c.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
     <link rel="stylesheet" href="css/styles.css">
-    <title>Week 8</title>
+    <title>Week 10</title>
 </head>
 
 <body>
@@ -58,7 +59,45 @@
 </header>
 
 <section id="hero"></section>
+<section id="fancybox">
+    <div id="fb-grid-item">
+        <div data-aos="fade-up">
+        <h1>Fancybox</h1>
+        <ul>
+            <li>
+                <a href="img/fancy/fancy-1.jpg" data-fancybox data-fancybox="gallery-1"  data-caption="fancy-1"><img src="img/fancy/fancy-1.jpg" alt="scuba diver"></a>
+            </li>
+            <li>
+                <a href="img/fancy/fancy-2.jpg" data-fancybox data-fancybox="gallery-1" data-caption="fancy-2"><img src="img/fancy/fancy-2.jpg" alt="waves"></a>
+            </li>
+            <li>
+                <a href="img/fancy/fancy-3.jpg" data-fancybox data-fancybox="gallery-1" data-caption="fancy-3"><img src="img/fancy/fancy-3.jpg" alt="coral reef"></a>
+            </li>
+            <li>
+                <a href="img/fancy/fancy-4.jpg" data-fancybox data-fancybox="gallery-1" data-caption="fancy-4"><img src="img/fancy/fancy-4.jpg" alt="jelly fish"></a>
+            </li>
+        </ul>
+    </div>
+</div>
+</section>
+<section id="fancyCarousel">
+    <div id="fc-grid-item">
+        <div data-aos="fade-up">
+        <h1>Fancy Carousel</h1>
+        <div class="f-carousel" id="myCarousel">
+            <!-- <div class="f-carousel__slide"><img src="img/fancy/fancy-1.jpg" alt="fancy-1r"></div>
+            <div class="f-carousel__slide"><img src="img/fancy/fancy-2.jpg" alt="fancy-2"></div>
+            <div class="f-carousel__slide"><img src="img/fancy/fancy-3.jpg" alt="fancy-3"></div>
+            <div class="f-carousel__slide"><img src="img/fancy/fancy-4.jpg" alt="fancy-4"></div> -->
+            <div class="f-carousel__slide"><div id="fc-1" class="slide"></div></div>
+            <div class="f-carousel__slide"><div id="fc-2" class="slide"></div></div>
+            <div class="f-carousel__slide"><div id="fc-3" class="slide"></div></div>
+            <div class="f-carousel__slide"><div id="fc-4" class="slide"></div></div>
+        </div>
 
+        </div>
+    </div>
+</section>
 
     <div id="validation-button">
         <a href=" https://validator.w3.org/nu/?doc=https://week-8-modal--breton-hart-info-151.netlify.app/?#" target="_blank">
@@ -66,7 +105,7 @@
         </a>
         </div>  
 
-
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="js/scripts-dist.js"></script>
     
 </body>
