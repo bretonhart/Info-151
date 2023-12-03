@@ -1,36 +1,54 @@
 /* =============
     sign-in
 ============= */
-#sign-in{
-    background-color: var(--darkblue);
+#signin-container{
+
+    background-color: #027e97CC;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 16px;
     position: fixed;
     width: 100%;
     box-sizing: border-box;
-    margin-top: 20vh;
-
-
-
-    form{
-        input{
-            width: 100%;
-            box-sizing: border-box;
-            height: 60px;
-            margin-bottom: 24px;
-            border: none;
-            border-radius: 8px;
-
-        }
-
-        button{
-            background-color: var(--lightgreen);
-            color: var(white);
-
-
-        }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    display: none;
+ 
+    .close-btn{
+        position: absolute;
     }
+ 
+   
+     
+        form{
+            box-sizing: border-box;
+            padding: 24px;
+            border-radius: 8px;
+            background-color: #024A58CC;
+ 
+            #close-btn-container{
+                display: flex;
+                justify-content: flex-end;
+                margin-bottom: 70px;
+ 
+ 
+            }
+ 
+            input{
+                width: 100%;
+                box-sizing: border-box;
+                height: 60px;
+                margin-bottom: 24px;
+                border: none;
+                border-radius: 8px;
+   
+            }
+   
+            #signin-btn-container{
+                display: flex;
+                justify-content: flex-end;
+   
+            }
+        }
 }
